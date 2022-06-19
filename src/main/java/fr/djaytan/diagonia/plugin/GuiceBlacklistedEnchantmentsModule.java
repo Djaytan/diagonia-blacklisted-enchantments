@@ -18,7 +18,6 @@
 
 package fr.djaytan.diagonia.plugin;
 
-import co.aikar.commands.PaperCommandManager;
 import com.google.inject.AbstractModule;
 import com.google.inject.Provides;
 import com.google.inject.Singleton;
@@ -35,21 +34,18 @@ import java.util.Locale;
 import java.util.ResourceBundle;
 import javax.inject.Named;
 import net.kyori.adventure.text.minimessage.MiniMessage;
-import org.bukkit.plugin.java.JavaPlugin;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 
 /** General Guice module. */
 public class GuiceBlacklistedEnchantmentsModule extends AbstractModule {
 
-  private final JavaPlugin javaPlugin;
   private final Logger logger;
   // TODO: use a provider of a config instead (required for reload feature of plugin)
   private final PluginConfig pluginConfig;
 
   public GuiceBlacklistedEnchantmentsModule(
-      @NotNull Logger logger, @NotNull JavaPlugin javaPlugin, @NotNull PluginConfig pluginConfig) {
-    this.javaPlugin = javaPlugin;
+      @NotNull Logger logger, @NotNull PluginConfig pluginConfig) {
     this.logger = logger;
     this.pluginConfig = pluginConfig;
   }
@@ -84,11 +80,5 @@ public class GuiceBlacklistedEnchantmentsModule extends AbstractModule {
   @Singleton
   public @NotNull MiniMessage provideMiniMessage() {
     return MiniMessage.miniMessage();
-  }
-
-  @Provides
-  @Singleton
-  public @NotNull PaperCommandManager provideAcfPaperCommandManager() {
-    return new PaperCommandManager(javaPlugin);
   }
 }

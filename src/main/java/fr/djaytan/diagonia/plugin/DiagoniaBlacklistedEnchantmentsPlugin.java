@@ -38,7 +38,8 @@ public class DiagoniaBlacklistedEnchantmentsPlugin extends JavaPlugin {
       // This is tricky at startup, but don't found better way than that...
       // Perfect startup would inject Guice immediately, but some injections need config values
       ConfigController configController =
-          new ConfigControllerImpl(new BlacklistedEnchantmentsConfigSerializersFactory().factory(), this);
+          new ConfigControllerImpl(
+              new BlacklistedEnchantmentsConfigSerializersFactory().factory(), this);
 
       configController.saveDefaultConfigs();
       PluginConfig pluginConfig = configController.loadPluginConfig();
@@ -46,7 +47,7 @@ public class DiagoniaBlacklistedEnchantmentsPlugin extends JavaPlugin {
       Injector injector =
           Guice.createInjector(
               new GuiceBukkitModule(this),
-              new GuiceBlacklistedEnchantmentsModule(getSLF4JLogger(), this, pluginConfig));
+              new GuiceBlacklistedEnchantmentsModule(getSLF4JLogger(), pluginConfig));
       injector.injectMembers(this);
 
       pluginController.enablePlugin();
