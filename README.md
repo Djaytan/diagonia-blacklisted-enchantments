@@ -49,6 +49,16 @@ of Java util library and MiniMessage with Adventure API libraries developed and 
 
 ![](img/bow_shoot_reaction.png)
 
+## Setup
+
+First, you need to have set up a Minecraft server with any Bukkit implementation which correspond to
+PaperMC or a forked version like Purpur. You can find help about this with the
+[PaperMC documentation](https://docs.papermc.io/paper/getting-started).
+
+When it's done, simply download the `.jar` file in the release section of this repository and put it
+into the `plugins/` folder, and you'll be done! After starting the server, the plugin should now
+appear green in the list displayed by the `/plugins` command.
+
 ## Licence
 
 This project is under the licence GNU GPLv3.
