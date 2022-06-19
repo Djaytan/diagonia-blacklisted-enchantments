@@ -55,9 +55,10 @@ First, you need to have set up a Minecraft server with any Bukkit implementation
 PaperMC or a forked version like Purpur. You can find help about this with the
 [PaperMC documentation](https://docs.papermc.io/paper/getting-started).
 
-When it's done, simply download the `.jar` file in the release section of this repository and put it
-into the `plugins/` folder, and you'll be done! After starting the server, the plugin should now
-appear green in the list displayed by the `/plugins` command.
+When it's done, simply download the latest `.jar` file in the
+[release section](https://github.com/Djaytan/diagonia-blacklisted-enchantments/releases/) of this
+repository and put it into the `plugins/` folder, and you'll be done! After starting the server,
+the plugin should now appear green in the list displayed by the `/plugins` command.
 
 ## Licence
 
