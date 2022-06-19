@@ -1,5 +1,19 @@
 # diagonia-blacklisted-enchantments
+![Target](https://img.shields.io/badge/plugin-Minecraft-blueviolet)
+![Minecraft version](https://img.shields.io/badge/version-1.18.2-blue)
+
 Diagonia's plugin which blacklist enchantments like Mending and Infinity in Minecraft.
+
+## Compatibility & Tested version
+
+This plugin use the Bukkit API maintained by the [Spigot team](https://www.spigotmc.org/) and which
+can be found [here](https://hub.spigotmc.org/javadocs/bukkit/).
+
+No tests have been done with the Spigot's Bukkit implementation. Today it's best to turn to
+[PaperMC](https://papermc.io/) implementation which give enhanced performances and add some useful
+additional tools.
+
+**Tested version for this plugin :** 1.18.x
 
 ## How it works
 
