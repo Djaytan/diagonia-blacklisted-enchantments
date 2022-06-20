@@ -4,14 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>fr.djaytan.diagonia</groupId>
-    <artifactId>diagonia-blacklisted-enchantments</artifactId>
+    <groupId>fr.djaytan.minecraft</groupId>
+    <artifactId>mc-blacklisted-enchantments</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>Diagonia-BlacklistedEnchantments</name>
-    <description>Diagonia's plugin which blacklist enchantments like Mending and Infinity in Minecraft</description>
-    <url>https://www.diagonia.fr/</url>
+    <name>BlacklistedEnchantments</name>
+    <description>Minecraft plugin which allow Bukkit servers to blacklist enchantments like Mending and Infinity</description>
 
     <licenses>
         <license>
@@ -31,7 +30,7 @@
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
 
         <minecraft.api.version>1.18</minecraft.api.version>
-        <package.root>fr.djaytan.diagonia</package.root>
+        <package.root>fr.djaytan.minecraft.blacklisted_enchantments</package.root>
 
         <papermc.version>1.18.2-R0.1-SNAPSHOT</papermc.version>
         <acf.version>0.5.1-SNAPSHOT</acf.version>
